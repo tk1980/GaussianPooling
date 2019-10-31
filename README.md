@@ -85,16 +85,19 @@ These performance results are not the same as those reported in the paper becaus
 
 | Network  | Pooling | Top-1 Err. |
 |---|---|---|
-<!-- | VGG-16 mod [2]|  Max | 22.99 | -->
-<!-- | VGG-16 mod [2]|  Gauss |  | -->
-<!-- | VGG-16 [3]|  Max | 25.04 | -->
-<!-- | VGG-16 [3]|  Gauss | | -->
 | ResNet-50 [4]|  Skip | 23.45 |
 | ResNet-50 [4]|  Gauss | 21.10 |
-<!-- | ResNeXt-50 [5]|  Skip | 22.42 | -->
-<!-- | ResNeXt-50 [5]|  Gauss | 21.55 | -->
-<!-- | DenseNet-169 [6]|  Avg. | 23.03 | -->
-<!-- | DenseNet-169 [6]|  Gauss | 22.24 | -->
+
+<!--
+| VGG-16 mod [2]|  Max | 22.99 |
+| VGG-16 mod [2]|  Gauss |  |
+| VGG-16 [3]|  Max | 25.04 |
+| VGG-16 [3]|  Gauss | |
+| ResNeXt-50 [5]|  Skip | 22.42 |
+| ResNeXt-50 [5]|  Gauss |  |
+| DenseNet-169 [6]|  Avg. | 23.03 |
+| DenseNet-169 [6]|  Gauss |  |
+  -->
 
 ## References
 
