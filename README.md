@@ -63,7 +63,7 @@ The iSP-Gaussian pooling layer is simply incorporated as in the other pooling la
 from modules.mylayers import GaussianPoolingCuda2d
 pool = GaussianPoolingCuda2d(num_features=num_features, kernel_size=kernel_size, stride=stride, padding=padding, stochasticity='CN')
 
-(naive-Pytorch)
+(Pytorch-native)
 from modules.mylayers import GaussianPooling2d
 pool = GaussianPooling2d(num_features=num_features, kernel_size=kernel_size, stride=stride, padding=padding, stochasticity='CN')
 ```
@@ -73,7 +73,11 @@ where `stochasticity` indicates whether we perform fully stochastic pooling (`st
 For example, the ResNet-50 equipped with the iSP-Gaussian pooling is trained on ImageNet by
 
 ```bash
-CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet_train.py  --dataset imagenet  --data ./datasets/imagenet12/images/  --arch resnet50 --pool gauss_CN  --config-name imagenet  --out-dir ./results/imagenet/resnet50/max_ent/  --dist-url 'tcp://127.0.0.1:8080'  --dist-backend 'nccl'  --multiprocessing-distributed  --world-size 1  --rank 0
+(CUDA)
+CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet_train.py  --dataset imagenet  --data ./datasets/imagenet12/images/  --arch resnet50 --pool gauss_cuda_CN  --config-name imagenet  --out-dir ./results/imagenet/resnet50/gauss_cuda_CN/  --dist-url 'tcp://127.0.0.1:8080'  --dist-backend 'nccl'  --multiprocessing-distributed  --world-size 1  --rank 0
+
+(Pytorch-native)
+CUDA_VISIBLE_DEVICES=0,1,2,3 python imagenet_train.py  --dataset imagenet  --data ./datasets/imagenet12/images/  --arch resnet50 --pool gauss_CN  --config-name imagenet  --out-dir ./results/imagenet/resnet50/gauss_CN/  --dist-url 'tcp://127.0.0.1:8080'  --dist-backend 'nccl'  --multiprocessing-distributed  --world-size 1  --rank 0
 ```
 
 Note that the ImageNet dataset must be downloaded at `./datasets/imagenet12/` before the training.
