@@ -89,30 +89,33 @@ These performance results are not the same as those reported in the paper becaus
 
 | Network  | Pooling | Top-1 Err. |
 |---|---|---|
+| VGG-16 mod [2]|  Max | 22.99 |
+| VGG-16 mod [2]|  Gauss |22.23  |
+| VGG-16 [3]|  Max | 25.04 |
+| VGG-16 [3]|  Gauss |24.21 |
 | ResNet-50 [4]|  Skip | 23.45 |
 | ResNet-50 [4]|  Gauss | 21.10 |
-
-<!--
-| VGG-16 mod [2]|  Max | 22.99 |
-| VGG-16 mod [2]|  Gauss |  |
-| VGG-16 [3]|  Max | 25.04 |
-| VGG-16 [3]|  Gauss | |
+| ResNet-101 [4]|  Skip | 21.89 |
+| ResNet-101 [4]|  Gauss | 20.31 |
 | ResNeXt-50 [5]|  Skip | 22.42 |
-| ResNeXt-50 [5]|  Gauss |  |
+| ResNeXt-50 [5]|  Gauss |20.81 |
 | DenseNet-169 [6]|  Avg. | 23.03 |
-| DenseNet-169 [6]|  Gauss |  |
-  -->
+| DenseNet-169 [6]|  Gauss | 21.75 |
 
 ## References
 
 [1] T. Kobayashi. "Global Feature Guided Local Pooling." In ICCV, pages 3365-3374, 2019. [pdf](https://staff.aist.go.jp/takumi.kobayashi/publication/2019/ICCV2019.pdf)
 
-<!-- [2] T. Kobayashi. "Analyzing Filters Toward Efficient ConvNets." In CVPR, pages 5619-5628, 2018. [pdf](https://staff.aist.go.jp/takumi.kobayashi/publication/2018/CVPR2018.pdf) -->
+[2] T. Kobayashi. "Analyzing Filters Toward Efficient ConvNets." In CVPR, pages 5619-5628, 2018. [pdf](https://staff.aist.go.jp/takumi.kobayashi/publication/2018/CVPR2018.pdf)
 
-<!-- [3] K. Simonyan and A. Zisserman. "Very Deep Convolutional Networks For Large-Scale Image Recognition." CoRR, abs/1409.1556, 2014. -->
+[3] K. Simonyan and A. Zisserman. "Very Deep Convolutional Networks For Large-Scale Image Recognition." CoRR, abs/1409.1556, 2014.
 
 [4] K. He, X. Zhang, S. Ren, and J. Sun. "Deep Residual Learning For Image Recognition." In CVPR, pages 770–778, 2016.
 
-<!-- [5] S. Xie, R. Girshick, P. Dollar, Z. Tu, and K. He. "Aggregated Residual Transformations For Deep Neural Networks." In CVPR, pages 5987–5995, 2017. -->
+[5] S. Xie, R. Girshick, P. Dollar, Z. Tu, and K. He. "Aggregated Residual Transformations For Deep Neural Networks." In CVPR, pages 5987–5995, 2017.
 
-<!-- [6] G. Huang, Z. Liu, L. Maaten and K.Q. Weinberger. "Densely Connected Convolutional Networks." In CVPR, pages 2261-2269, 2017. -->
+[6] G. Huang, Z. Liu, L. Maaten and K.Q. Weinberger. "Densely Connected Convolutional Networks." In CVPR, pages 2261-2269, 2017.
+
+
+## Contact
+takumi.kobayashi (At) aist.go.jp
